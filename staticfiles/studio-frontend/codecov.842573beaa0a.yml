@@ -1,0 +1,5 @@
+ignore:
+  - "src/accessibilityIndex.jsx"
+  - "src/index.jsx"
+  - "src/components/BackendStatusBanner/*"
+  - "src/data/i18n/locales/json/*"

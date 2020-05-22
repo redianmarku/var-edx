@@ -1,0 +1,54 @@
+.edx-cookie-banner-wrapper {
+  background: #f2f8fd;
+  box-sizing: border-box;
+  /** Base Styles - start **/
+  text-align: left;
+  line-height: 1.5;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  /** Base Styles - end **/ }
+  .edx-cookie-banner-wrapper .alert {
+    position: relative;
+    padding: 0.75rem 1.25rem; }
+  .edx-cookie-banner-wrapper .alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75rem 1.25rem;
+    background: transparent;
+    border: 0;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    float: right;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 700; }
+  .edx-cookie-banner-wrapper .alert-dismissible .btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle; }
+  .edx-cookie-banner-wrapper .edx-cookie-banner {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    min-width: 0;
+    margin: 0 auto;
+    background: inherit;
+    border: none; }
+    .edx-cookie-banner-wrapper .edx-cookie-banner .policy-link {
+      color: #0075b4;
+      text-decoration: underline; }
+      .edx-cookie-banner-wrapper .edx-cookie-banner .policy-link:focus, .edx-cookie-banner-wrapper .edx-cookie-banner .policy-link:hover {
+        color: #075683;
+        border: none; }
+    .edx-cookie-banner-wrapper .edx-cookie-banner .alert-dialog {
+      margin-right: 30px;
+      color: #4e4e4e; }
+    .edx-cookie-banner-wrapper .edx-cookie-banner .btn.close {
+      color: #0075b4; }
+      .edx-cookie-banner-wrapper .edx-cookie-banner .btn.close:focus, .edx-cookie-banner-wrapper .edx-cookie-banner .btn.close:hover {
+        color: #075683;
+        cursor: pointer; }

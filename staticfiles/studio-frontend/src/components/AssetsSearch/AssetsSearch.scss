@@ -1,0 +1,9 @@
+@import 'edx-bootstrap';
+@import "~@edx/paragon/src/SearchField/SearchField";
+
+
+
+// Overriding SFE _var-reset rules which interfere with paragon search field functionality
+.search-field .form-group.form-inline {
+  background-color: transparent
+}

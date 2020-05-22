@@ -1,0 +1,82 @@
+/* NOTE: This file, which loads all necessary fonts for rendering Studio UI, is 1 of 3 CSS files compiled in our production pipeline  */
+/* No subsetting. */
+
+@font-face {
+    font-family: 'Open Sans';
+    src:
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.39d27e13dce3.woff2") format('woff2'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.df04ed7fc7d8.woff") format('woff'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.557ad65e492b.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.e7cc7120e670.woff2") format('woff2'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.02d04d22784f.woff") format('woff'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.05e99ea9cf0b.ttf") format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.55835483c304.woff2") format('woff2'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.87119b577169.woff") format('woff'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.4c7e867ae422.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.383eba0e55ed.woff2") format('woff2'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.b9812e74f089.woff") format('woff'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.2416d120632b.ttf") format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.08952b029e4d.woff2") format('woff2'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.dbbfd9e667c7.woff") format('woff'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.f75c4b742376.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.3343e5436871.woff2") format('woff2'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.f386291c234e.woff") format('woff'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.e84740526b8c.ttf") format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.3326e4d74d39.woff2") format('woff2'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.6dbaf63547f2.woff") format('woff'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.ad0eb070a07f.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.5aaceea2d60d.woff2") format('woff2'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.7dae097d5db8.woff") format('woff'),
+        url("/static/edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.f9103010ab55.ttf") format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}

@@ -1,0 +1,45 @@
+@import 'bourbon/bourbon';
+@import 'lms/theme/variables';
+.xmodule_display.xmodule_StaticTabModule {
+  @import "000-9c25b06c992becf5ad01041de849eede.scss";
+}
+.xmodule_display.xmodule_CourseModule {
+  @import "000-e0c890e02fd576647569731b4f021440.scss";
+}
+.xmodule_display.xmodule_HtmlModule {
+  @import "000-9c25b06c992becf5ad01041de849eede.scss";
+}
+.xmodule_display.xmodule_AnnotatableModule {
+  @import "000-5ecbc1bbde2e55482a03f38c7b813786.scss";
+}
+.xmodule_display.xmodule_WordCloudModule {
+  @import "000-dee095f89a896fe05b83616b7a20d36c.scss";
+}
+.xmodule_display.xmodule_CapaModule {
+  @import "000-a39b208fef1f534b02c5420447267dba.scss";
+}
+.xmodule_display.xmodule_PollModule {
+  @import "000-043231d4dec200c1dc245325230d74df.scss";
+}
+.xmodule_display.xmodule_VideoModule {
+  @import "000-1aba2718a712593123344400a3aeb5db.scss";
+  @import "001-b128df66afea3c41620bee26cd2395f2.scss";
+}
+.xmodule_display.xmodule_CourseInfoModule {
+  @import "000-9c25b06c992becf5ad01041de849eede.scss";
+}
+.xmodule_display.xmodule_AboutModule {
+  @import "000-9c25b06c992becf5ad01041de849eede.scss";
+}
+.xmodule_display.xmodule_ConditionalModule {
+  @import "000-a39b208fef1f534b02c5420447267dba.scss";
+}
+.xmodule_display.xmodule_SequenceModule {
+  @import "000-e0c890e02fd576647569731b4f021440.scss";
+}
+.xmodule_display.xmodule_LTIModule {
+  @import "000-80797edfb8c43719d5c3a81f5770ef46.scss";
+}
+.xmodule_display.xmodule_SectionModule {
+  @import "000-e0c890e02fd576647569731b4f021440.scss";
+}

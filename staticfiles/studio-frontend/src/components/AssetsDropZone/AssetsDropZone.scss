@@ -1,0 +1,44 @@
+@import 'edx-bootstrap';
+
+.center-text {
+  text-align: center;
+}
+
+.drop-zone-compact {
+  border: $dark dashed 1px;
+  padding: 0;
+
+  button {
+    white-space: normal;
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+  }
+
+  h2 {
+    @extend .center-text;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-lg;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: $font-size-sm;
+    margin-bottom: $spacer * 0.5;
+  }
+}
+
+.drop-zone {
+  @extend .drop-zone-compact;
+
+  @media (min-width: map-get($grid-breakpoints, 'md')) {
+    padding: $spacer;
+    h2 {
+      margin-bottom: inherit;
+    }
+  }
+}
+
+.drop-active {
+  outline: $dark dashed 2px;
+  background-color: rgba($primary, 0.2);
+}

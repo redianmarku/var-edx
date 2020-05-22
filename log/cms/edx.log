@@ -1,0 +1,350 @@
+2020-05-19 16:44:45,778 WARNING 7434 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-19 16:44:45,778 WARNING 7434 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-19 16:44:46,497 WARNING 7449 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-19 16:44:46,497 WARNING 7449 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-19 17:13:55,741 WARNING 8921 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-19 17:13:55,741 WARNING 8921 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-19 17:14:01,464 WARNING 8920 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-19 17:14:01,464 WARNING 8920 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-19 17:16:31,615 WARNING 8920 [py.warnings] deprecated.py:133 - /opt/bitnami/apps/edx/edx-platform/openedx/core/djangoapps/user_authn/views/deprecated.py:133: DeprecationWarning: Please use RegistrationView instead.
+  warnings.warn("Please use RegistrationView instead.", DeprecationWarning)
+
+2020-05-19 17:16:40,161 WARNING 8921 [py.warnings] deprecated.py:133 - /opt/bitnami/apps/edx/edx-platform/openedx/core/djangoapps/user_authn/views/deprecated.py:133: DeprecationWarning: Please use RegistrationView instead.
+  warnings.warn("Please use RegistrationView instead.", DeprecationWarning)
+
+2020-05-19 17:16:40,351 INFO 8921 [audit] models.py:2247 - Login success - Marku (redi15marku@gmail.com)
+2020-05-19 17:16:40,456 ERROR 8921 [edx.discussion] models.py:2232 - Could not create comments service user with id 5
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/common/djangoapps/student/models.py", line 2227, in create_comments_service_user
+    cc_user.save()
+  File "/opt/bitnami/apps/edx/edx-platform/lms/lib/comment_client/models.py", line 141, in save
+    metric_action='model.update'
+  File "/opt/bitnami/apps/edx/edx-platform/lms/lib/comment_client/utils.py", line 70, in perform_request
+    timeout=config.connection_timeout
+  File "/opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='localhost', port=4567): Max retries exceeded with url: /api/v1/users/5?request_id=c6ba5df9-114f-42a1-9e95-a312b56813b5 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb677a604d0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+2020-05-19 17:16:40,459 INFO 8921 [audit] register.py:211 - Login success on new account creation - Marku
+2020-05-20 03:50:42,916 WARNING 107066 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 03:50:42,916 WARNING 107066 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 03:50:42,938 WARNING 107050 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 03:50:42,939 WARNING 107050 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 04:14:32,416 WARNING 111145 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 04:14:32,416 WARNING 111145 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 04:14:32,426 WARNING 111122 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 04:14:32,427 WARNING 111122 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 04:18:50,826 WARNING 112411 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 04:18:50,834 WARNING 112411 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 04:18:51,007 WARNING 112387 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 04:18:51,007 WARNING 112387 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 04:43:23,205 WARNING 111993 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 04:43:23,206 WARNING 111993 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 04:43:28,640 WARNING 111994 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 04:43:28,641 WARNING 111994 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 05:31:33,000 WARNING 111994 [py.warnings] deprecated.py:133 - /opt/bitnami/apps/edx/edx-platform/openedx/core/djangoapps/user_authn/views/deprecated.py:133: DeprecationWarning: Please use RegistrationView instead.
+  warnings.warn("Please use RegistrationView instead.", DeprecationWarning)
+
+2020-05-20 05:31:33,137 INFO 111994 [audit] models.py:2247 - Login success - Admin (redian0marku@gmail.com)
+2020-05-20 05:31:33,236 ERROR 111994 [edx.discussion] models.py:2232 - Could not create comments service user with id 10
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/common/djangoapps/student/models.py", line 2227, in create_comments_service_user
+    cc_user.save()
+  File "/opt/bitnami/apps/edx/edx-platform/lms/lib/comment_client/models.py", line 141, in save
+    metric_action='model.update'
+  File "/opt/bitnami/apps/edx/edx-platform/lms/lib/comment_client/utils.py", line 70, in perform_request
+    timeout=config.connection_timeout
+  File "/opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='localhost', port=4567): Max retries exceeded with url: /api/v1/users/10?request_id=cd6dde6f-c77c-4f19-903e-a2aaf32f9619 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe1d1921050>: Failed to establish a new connection: [Errno 111] Connection refused',))
+2020-05-20 05:31:33,239 INFO 111994 [audit] register.py:211 - Login success on new account creation - Admin
+2020-05-20 05:35:27,688 INFO 111994 [xmodule.modulestore.mixed] mixed.py:657 - Creating course run course-v1:ReadyDev+CS001+CS001...
+2020-05-20 05:35:27,699 WARNING 111994 [py.warnings] __init__.py:1564 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/pkg_resources/__init__.py:1145: DeprecationWarning: Use of .. or absolute path in a resource path is not allowed and will raise exceptions in a future release.
+  self, resource_name
+
+2020-05-20 05:35:27,748 INFO 111994 [openedx.core.djangoapps.content.course_overviews.models] models.py:153 - Creating course overview for course-v1:ReadyDev+CS001+CS001.
+2020-05-20 05:35:27,854 INFO 111994 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[2c292412-9c77-4ac7-896d-61ae4cc315c0] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS001+CS001'}], None
+2020-05-20 05:35:27,877 INFO 111994 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fe1d2a79950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:27,877 INFO 111994 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d28a9a50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:27,877 INFO 111994 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d28aeb50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:27,878 INFO 111994 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fe1d28389d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:27,878 INFO 111994 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d283b4d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:27,878 INFO 111994 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fe1d286add0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:27,878 INFO 111994 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fe1d27c9bd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:27,878 INFO 111994 [xmodule.modulestore.mixed] mixed.py:665 - Course run course-v1:ReadyDev+CS001+CS001 created successfully!
+2020-05-20 05:35:28,508 WARNING 111993 [py.warnings] __init__.py:1564 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/pkg_resources/__init__.py:1145: DeprecationWarning: Use of .. or absolute path in a resource path is not allowed and will raise exceptions in a future release.
+  self, resource_name
+
+2020-05-20 05:35:28,779 WARNING 111993 [py.warnings] locator.py:863 - /tmp/mako_cms/cd8721f141d3b2cc09b652597e74e19f/course_outline.html.py:220: DeprecationWarning: Name is no longer supported as a property of Locators. Please use the block_id property.
+  __M_writer(js_escaped_string(context_course.location.name ))
+
+2020-05-20 05:35:28,780 WARNING 111993 [py.warnings] locator.py:889 - /tmp/mako_cms/cd8721f141d3b2cc09b652597e74e19f/course_outline.html.py:228: DeprecationWarning: Revision is no longer supported as a property of Locators. Please use the branch property.
+  __M_writer(js_escaped_string(context_course.location.revision ))
+
+2020-05-20 05:35:32,123 WARNING 111994 [edx_rest_framework_extensions.auth.jwt.middleware] middleware.py:62 - The view CourseQualityView allows Jwt Authentication but needs to include the NotJwtRestrictedApplication permission class (adding it for you)
+2020-05-20 05:35:32,124 WARNING 111993 [edx_rest_framework_extensions.auth.jwt.middleware] middleware.py:62 - The view CourseValidationView allows Jwt Authentication but needs to include the NotJwtRestrictedApplication permission class (adding it for you)
+2020-05-20 05:35:32,167 INFO 111993 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS001+CS001.
+2020-05-20 05:35:32,233 INFO 111993 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[c04e4e52-eb60-47bc-917c-7e96d27cf384] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS001+CS001'}], None
+2020-05-20 05:35:32,253 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fe1d2a79950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:32,254 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d28a9a50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:32,254 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d28aeb50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:32,254 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fe1d28389d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:32,255 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d283b4d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:32,255 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fe1d286add0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:35:32,255 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fe1d27c9bd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:26,589 INFO 111993 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS001+CS001.
+2020-05-20 05:38:26,654 INFO 111993 [openedx.core.djangoapps.content.course_overviews.signals] signals.py:69 - Course start date changed: course=course-v1:ReadyDev+CS001+CS001 previous=2030-01-01T00:00:00+00:00 new=2020-01-01T00:00:00+00:00
+2020-05-20 05:38:26,679 INFO 111993 [celery_utils.logged_task] logged_task.py:31 - Task openedx.core.djangoapps.schedules.tasks.update_course_schedules[838230be-5165-4fea-9e46-0e1e423c0612] submitted with arguments None, {'course_id': u'course-v1:ReadyDev+CS001+CS001', 'new_upgrade_deadline_str': None, 'new_start_date_str': '2020-01-01T00:00:00+00:00'}
+2020-05-20 05:38:26,721 INFO 111993 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[b892a85f-fe72-4bad-a69b-2e1f317d2a53] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS001+CS001'}], None
+2020-05-20 05:38:26,750 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fe1d2a79950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:26,750 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d28a9a50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:26,751 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d28aeb50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:26,751 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fe1d28389d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:26,751 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d283b4d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:26,751 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fe1d286add0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:26,751 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fe1d27c9bd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:47,837 INFO 111993 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS001+CS001.
+2020-05-20 05:38:47,927 INFO 111993 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[692da5c6-06c0-47a1-a579-8fee3bde37c4] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS001+CS001'}], None
+2020-05-20 05:38:47,945 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fe1d2a79950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:47,945 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d28a9a50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:47,946 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d28aeb50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:47,946 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fe1d28389d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:47,947 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fe1d283b4d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:47,947 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fe1d286add0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:38:47,947 INFO 111993 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fe1d27c9bd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS001', u'CS001', None, None)}. Response was: None
+2020-05-20 05:39:11,738 WARNING 111994 [py.warnings] locator.py:863 - /tmp/mako_cms/cd8721f141d3b2cc09b652597e74e19f/course_outline.html.py:220: DeprecationWarning: Name is no longer supported as a property of Locators. Please use the block_id property.
+  __M_writer(js_escaped_string(context_course.location.name ))
+
+2020-05-20 05:39:11,738 WARNING 111994 [py.warnings] locator.py:889 - /tmp/mako_cms/cd8721f141d3b2cc09b652597e74e19f/course_outline.html.py:228: DeprecationWarning: Revision is no longer supported as a property of Locators. Please use the branch property.
+  __M_writer(js_escaped_string(context_course.location.revision ))
+
+2020-05-20 05:39:12,399 WARNING 111993 [edx_rest_framework_extensions.auth.jwt.middleware] middleware.py:62 - The view CourseQualityView allows Jwt Authentication but needs to include the NotJwtRestrictedApplication permission class (adding it for you)
+2020-05-20 05:39:12,402 WARNING 111994 [edx_rest_framework_extensions.auth.jwt.middleware] middleware.py:62 - The view CourseValidationView allows Jwt Authentication but needs to include the NotJwtRestrictedApplication permission class (adding it for you)
+2020-05-20 05:54:25,249 WARNING 125964 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 05:54:25,249 WARNING 125964 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 05:54:25,264 WARNING 125988 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 05:54:25,265 WARNING 125988 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 07:01:37,572 WARNING 3557 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 07:01:37,572 WARNING 3557 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 07:06:13,042 WARNING 125555 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 07:06:13,042 WARNING 125555 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 07:41:56,228 WARNING 9444 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 07:41:56,228 WARNING 9444 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 07:57:43,820 WARNING 4981 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 07:57:43,820 WARNING 4981 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 07:57:59,704 WARNING 4982 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 07:57:59,704 WARNING 4982 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 07:58:30,835 INFO 4981 [xmodule.modulestore.mixed] mixed.py:657 - Creating course run course-v1:ReadyDev+CS002+CS002...
+2020-05-20 07:58:30,846 WARNING 4981 [py.warnings] __init__.py:1564 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/pkg_resources/__init__.py:1145: DeprecationWarning: Use of .. or absolute path in a resource path is not allowed and will raise exceptions in a future release.
+  self, resource_name
+
+2020-05-20 07:58:30,899 INFO 4981 [openedx.core.djangoapps.content.course_overviews.models] models.py:153 - Creating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 07:58:31,031 INFO 4981 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[4ff215cc-0126-4283-b1f5-72756009c937] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 07:58:31,049 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdafd88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:31,050 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafb9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:31,051 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:31,051 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdafbad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:31,051 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafbb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:31,051 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdafb5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:31,051 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdafb38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:31,051 INFO 4981 [xmodule.modulestore.mixed] mixed.py:665 - Course run course-v1:ReadyDev+CS002+CS002 created successfully!
+2020-05-20 07:58:31,787 WARNING 4982 [py.warnings] __init__.py:1564 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/pkg_resources/__init__.py:1145: DeprecationWarning: Use of .. or absolute path in a resource path is not allowed and will raise exceptions in a future release.
+  self, resource_name
+
+2020-05-20 07:58:32,114 WARNING 4982 [py.warnings] locator.py:863 - /tmp/mako_cms/cd8721f141d3b2cc09b652597e74e19f/course_outline.html.py:220: DeprecationWarning: Name is no longer supported as a property of Locators. Please use the block_id property.
+  __M_writer(js_escaped_string(context_course.location.name ))
+
+2020-05-20 07:58:32,114 WARNING 4982 [py.warnings] locator.py:889 - /tmp/mako_cms/cd8721f141d3b2cc09b652597e74e19f/course_outline.html.py:228: DeprecationWarning: Revision is no longer supported as a property of Locators. Please use the branch property.
+  __M_writer(js_escaped_string(context_course.location.revision ))
+
+2020-05-20 07:58:32,853 WARNING 4981 [edx_rest_framework_extensions.auth.jwt.middleware] middleware.py:62 - The view CourseValidationView allows Jwt Authentication but needs to include the NotJwtRestrictedApplication permission class (adding it for you)
+2020-05-20 07:58:32,853 WARNING 4982 [edx_rest_framework_extensions.auth.jwt.middleware] middleware.py:62 - The view CourseQualityView allows Jwt Authentication but needs to include the NotJwtRestrictedApplication permission class (adding it for you)
+2020-05-20 07:58:32,894 INFO 4981 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 07:58:32,943 INFO 4981 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[155cb93c-e3f9-4208-81f6-8c9d8b95269b] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 07:58:32,961 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdafd88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:32,961 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafb9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:32,962 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:32,962 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdafbad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:32,962 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafbb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:32,962 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdafb5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:32,962 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdafb38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:38,760 INFO 4981 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 07:58:38,809 INFO 4981 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[a40df3d2-fcbd-4100-9b74-4eec58cf508b] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 07:58:38,828 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdafd88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:38,829 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafb9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:38,829 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:38,829 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdafbad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:38,829 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafbb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:38,830 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdafb5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:38,830 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdafb38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,146 INFO 4981 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 07:58:59,254 INFO 4981 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 07:58:59,319 INFO 4981 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[66b4fd2e-1f43-4f7a-9684-1fa89ae7690c] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 07:58:59,339 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdafd88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,340 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafb9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,340 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,340 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdafbad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,341 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafbb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,341 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdafb5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,341 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdafb38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,393 INFO 4981 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[b1ed3047-376f-4930-9975-fb6167518de7] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 07:58:59,414 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdafd88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,414 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafb9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,414 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,414 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdafbad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,415 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafbb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,415 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdafb5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:58:59,415 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdafb38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:05,496 INFO 4982 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 07:59:05,560 INFO 4982 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[50e732b4-48ff-445a-9145-5f7712f32708] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 07:59:05,578 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdb3d88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:05,579 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3b9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:05,579 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3ba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:05,579 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdb3bad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:05,580 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3bb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:05,580 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdb3b5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:05,580 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdb3b38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:09,986 INFO 4982 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 07:59:10,049 INFO 4982 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[2d36914f-0ae5-4fcb-89bd-6766395591d2] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 07:59:10,077 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdb3d88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,079 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3b9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,079 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3ba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,079 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdb3bad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,080 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3bb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,080 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdb3b5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,080 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdb3b38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,225 INFO 4982 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 07:59:10,280 INFO 4982 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[3b2e8a42-6980-4cc7-aee8-219128db7fb9] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 07:59:10,300 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdb3d88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,305 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3b9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,305 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3ba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,306 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdb3bad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,308 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3bb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,308 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdb3b5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:10,308 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdb3b38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 07:59:13,065 WARNING 4981 [py.warnings] locator.py:863 - /tmp/mako_cms/cd8721f141d3b2cc09b652597e74e19f/container.html.py:312: DeprecationWarning: Name is no longer supported as a property of Locators. Please use the block_id property.
+  __M_writer(js_escaped_string(context_course.location.name ))
+
+2020-05-20 07:59:13,066 WARNING 4981 [py.warnings] locator.py:889 - /tmp/mako_cms/cd8721f141d3b2cc09b652597e74e19f/container.html.py:320: DeprecationWarning: Revision is no longer supported as a property of Locators. Please use the branch property.
+  __M_writer(js_escaped_string(context_course.location.revision ))
+
+2020-05-20 07:59:27,736 ERROR 4981 [xmodule.video_module.video_handlers] video_handlers.py:343 - [Translation Dispatch] block-v1:ReadyDev+CS002+CS002+type@video+block@5e0f4d1c12534f31931929d310ecf18f
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/common/lib/xmodule/xmodule/video_module/video_handlers.py", line 332, in transcript
+    youtube_id=request.GET.get('videoId'),
+  File "/opt/bitnami/apps/edx/edx-platform/common/lib/xmodule/xmodule/video_module/transcripts_utils.py", line 1018, in get_transcript
+    transcripts_info=transcripts_info
+  File "/opt/bitnami/apps/edx/edx-platform/common/lib/xmodule/xmodule/video_module/transcripts_utils.py", line 64, in wrapper
+    return func(*args, **kwds)
+  File "/opt/bitnami/apps/edx/edx-platform/common/lib/xmodule/xmodule/video_module/transcripts_utils.py", line 971, in get_transcript_from_contentstore
+    lang=language
+NotFoundError: No transcript for `en` language
+2020-05-20 08:00:17,404 INFO 4982 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 08:00:17,494 INFO 4982 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[6b5dad88-936c-47fb-b1ba-61f7ececa75a] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 08:00:17,514 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdb3d88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:00:17,514 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3b9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:00:17,515 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3ba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:00:17,516 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdb3bad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:00:17,516 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3bb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:00:17,516 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdb3b5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:00:17,516 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdb3b38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:01:04,877 INFO 4982 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 08:01:04,920 INFO 4982 [openedx.core.djangoapps.content.course_overviews.signals] signals.py:69 - Course start date changed: course=course-v1:ReadyDev+CS002+CS002 previous=2030-01-01T00:00:00+00:00 new=2020-01-01T00:00:00+00:00
+2020-05-20 08:01:04,944 INFO 4982 [celery_utils.logged_task] logged_task.py:31 - Task openedx.core.djangoapps.schedules.tasks.update_course_schedules[75dce0eb-e955-4ed9-8810-c7dc3caa53c4] submitted with arguments None, {'course_id': u'course-v1:ReadyDev+CS002+CS002', 'new_upgrade_deadline_str': None, 'new_start_date_str': '2020-01-01T00:00:00+00:00'}
+2020-05-20 08:01:04,989 INFO 4982 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[3253cbcf-c558-40e7-a247-d99a4d5a22ea] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 08:01:05,010 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdb3d88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:01:05,011 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3b9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:01:05,011 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3ba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:01:05,011 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdb3bad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:01:05,011 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdb3bb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:01:05,011 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdb3b5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:01:05,012 INFO 4982 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdb3b38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:02:25,686 INFO 4981 [openedx.core.djangoapps.content.course_overviews.models] models.py:150 - Updating course overview for course-v1:ReadyDev+CS002+CS002.
+2020-05-20 08:02:25,776 INFO 4981 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.discussion.tasks.update_discussions_map[663e0f50-91fe-49ff-9a20-b17bcaad3f26] submitted with arguments [{'course_id': u'course-v1:ReadyDev+CS002+CS002'}], None
+2020-05-20 08:02:25,793 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function listen_for_course_publish at 0x7fbdafd88950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:02:25,794 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafb9fa50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:02:25,795 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafba5b50> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:02:25,795 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_block_structure_on_course_publish at 0x7fbdafbad9d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:02:25,795 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function _listen_for_course_publish at 0x7fbdafbb14d0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:02:25,795 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function update_discussions_on_course_publish at 0x7fbdafb5bcd0> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:02:25,795 INFO 4981 [xmodule.modulestore.django] django.py:198 - Sent course_published signal to <function trigger_update_xblocks_cache_task at 0x7fbdafb38950> with kwargs {'course_key': CourseLocator(u'ReadyDev', u'CS002', u'CS002', None, None)}. Response was: None
+2020-05-20 08:02:43,636 WARNING 4981 [edx_rest_framework_extensions.auth.jwt.middleware] middleware.py:62 - The view CourseQualityView allows Jwt Authentication but needs to include the NotJwtRestrictedApplication permission class (adding it for you)
+2020-05-20 08:14:58,557 WARNING 15083 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 08:14:58,557 WARNING 15083 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 08:14:58,701 WARNING 15063 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 08:14:58,701 WARNING 15063 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 09:46:56,711 WARNING 26687 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 09:46:56,711 WARNING 26687 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 10:06:40,747 WARNING 29408 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 10:06:40,747 WARNING 29408 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-20 10:23:00,134 WARNING 31823 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 10:23:00,135 WARNING 31823 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 04:05:09,592 WARNING 17017 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 04:05:09,592 WARNING 17017 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 04:05:16,066 WARNING 17016 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 04:05:16,067 WARNING 17016 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 04:07:51,732 INFO 17017 [ratelimitbackend] backends.py:45 - Login failed: username 'rediamarku', IP 185.89.159.42
+2020-05-21 04:07:51,733 WARNING 17017 [audit] login.py:234 - Login failed - password for redian1marku@gmail.com is invalid
+2020-05-21 04:07:51,734 ERROR 17017 [edx.student] login.py:377 - {'value': u'Email or password is incorrect.', 'success': False}
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/openedx/core/djangoapps/user_authn/views/login.py", line 359, in login_user
+    _handle_failed_authentication(email_user)
+  File "/opt/bitnami/apps/edx/edx-platform/openedx/core/djangoapps/user_authn/views/login.py", line 236, in _handle_failed_authentication
+    raise AuthFailedError(_('Email or password is incorrect.'))
+AuthFailedError
+2020-05-21 04:08:02,769 INFO 17016 [audit] models.py:2247 - Login success - Admin (redian0marku@gmail.com)
+2020-05-21 04:08:19,816 WARNING 17017 [py.warnings] __init__.py:1564 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/pkg_resources/__init__.py:1145: DeprecationWarning: Use of .. or absolute path in a resource path is not allowed and will raise exceptions in a future release.
+  self, resource_name
+
+2020-05-21 04:08:20,306 WARNING 17017 [py.warnings] locator.py:863 - /tmp/mako_cms/cd8721f141d3b2cc09b652597e74e19f/course_outline.html.py:220: DeprecationWarning: Name is no longer supported as a property of Locators. Please use the block_id property.
+  __M_writer(js_escaped_string(context_course.location.name ))
+
+2020-05-21 04:08:20,307 WARNING 17017 [py.warnings] locator.py:889 - /tmp/mako_cms/cd8721f141d3b2cc09b652597e74e19f/course_outline.html.py:228: DeprecationWarning: Revision is no longer supported as a property of Locators. Please use the branch property.
+  __M_writer(js_escaped_string(context_course.location.revision ))
+
+2020-05-21 04:08:21,157 WARNING 17017 [edx_rest_framework_extensions.auth.jwt.middleware] middleware.py:62 - The view CourseValidationView allows Jwt Authentication but needs to include the NotJwtRestrictedApplication permission class (adding it for you)
+2020-05-21 04:08:21,162 WARNING 17016 [edx_rest_framework_extensions.auth.jwt.middleware] middleware.py:62 - The view CourseQualityView allows Jwt Authentication but needs to include the NotJwtRestrictedApplication permission class (adding it for you)
+2020-05-21 04:08:21,196 WARNING 17016 [py.warnings] __init__.py:1564 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/pkg_resources/__init__.py:1145: DeprecationWarning: Use of .. or absolute path in a resource path is not allowed and will raise exceptions in a future release.
+  self, resource_name
+
+2020-05-21 04:27:51,308 WARNING 25246 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 04:27:51,308 WARNING 25246 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 04:39:44,589 WARNING 28260 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 04:39:44,589 WARNING 28260 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 04:39:44,820 WARNING 28282 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 04:39:44,820 WARNING 28282 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 04:44:09,942 WARNING 29858 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 04:44:09,942 WARNING 29858 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 04:44:09,954 WARNING 29831 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 04:44:09,954 WARNING 29831 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 05:11:22,037 WARNING 33445 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 05:11:22,037 WARNING 33445 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 05:21:02,300 WARNING 36175 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 05:21:02,300 WARNING 36175 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 05:21:02,831 WARNING 36195 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 05:21:02,831 WARNING 36195 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 06:09:39,109 WARNING 36348 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 06:09:39,110 WARNING 36348 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-21 06:09:53,287 WARNING 36349 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 06:09:53,288 WARNING 36349 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-22 09:06:19,769 WARNING 91201 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-22 09:06:19,769 WARNING 91201 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-22 09:21:35,181 WARNING 88339 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-22 09:21:35,181 WARNING 88339 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-22 09:21:40,700 WARNING 88338 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-22 09:21:40,700 WARNING 88338 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-22 11:47:30,042 WARNING 114707 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-22 11:47:30,042 WARNING 114707 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser
+2020-05-22 12:32:12,860 WARNING 121235 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-22 12:32:12,861 WARNING 121235 [enterprise.utils] utils.py:51 - cannot import name EnterpriseCustomerUser

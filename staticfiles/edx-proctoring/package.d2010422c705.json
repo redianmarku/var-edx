@@ -1,0 +1,69 @@
+{
+  "//": "Note that the version format is slightly different than that of the Python version when using prereleases.",
+  "_args": [
+    [
+      "@edx/edx-proctoring@1.5.0",
+      "/home/bitrock/ruby24stack/apps/edx/htdocs"
+    ]
+  ],
+  "_from": "@edx/edx-proctoring@1.5.0",
+  "_id": "@edx/edx-proctoring@1.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-RiNjAgh8ZMX0D5gfN2R09a0RBs/R/Blfs/DiqhLmvCSvyCoeMDGANrDDQXv1w5blxxSJbz8a2awSZkwpv6gWNQ==",
+  "_location": "/@edx/edx-proctoring",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@edx/edx-proctoring@1.5.0",
+    "name": "@edx/edx-proctoring",
+    "escapedName": "@edx%2fedx-proctoring",
+    "scope": "@edx",
+    "rawSpec": "1.5.0",
+    "saveSpec": null,
+    "fetchSpec": "1.5.0"
+  },
+  "_requiredBy": [
+    "/",
+    "/@edx/mockprock",
+    "/edx-proctoring-proctortrack"
+  ],
+  "_resolved": "https://registry.npmjs.org/@edx/edx-proctoring/-/edx-proctoring-1.5.0.tgz",
+  "_spec": "1.5.0",
+  "_where": "/home/bitrock/ruby24stack/apps/edx/htdocs",
+  "bugs": {
+    "url": "https://github.com/edx/edx-proctoring/issues"
+  },
+  "dependencies": {},
+  "description": "edx-proctoring ==============",
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "gulp": "^3.9.0",
+    "gulp-karma": "0.0.1",
+    "jasmine-core": "^2.8.0",
+    "karma": "^0.13.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^0.3.6",
+    "karma-jasmine-jquery": "0.1.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sinon": "^1.0.5",
+    "phantomjs-prebuilt": "^2.1.14",
+    "sinon": "^3.2.1"
+  },
+  "files": [
+    "/edx_proctoring/static"
+  ],
+  "homepage": "https://github.com/edx/edx-proctoring#readme",
+  "license": "GNU Affero GPLv3",
+  "main": "edx_proctoring/static/index.js",
+  "name": "@edx/edx-proctoring",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/edx/edx-proctoring.git"
+  },
+  "version": "1.5.0"
+}

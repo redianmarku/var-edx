@@ -1,0 +1,43 @@
+@import 'bourbon/bourbon';
+@import 'lms/theme/variables';
+.xmodule_edit.xmodule_StaticTabDescriptor {
+  @import "001-cdb9f90b9e5b5eeef97d3ff2e7ad1c0a.scss";
+  @import "000-cd23cf32f86efa1c4179df0201722e55.scss";
+}
+.xmodule_edit.xmodule_HiddenDescriptor {
+  @import "000-d41921b4c5d45188759ef3d04fd9a78a.scss";
+}
+.xmodule_edit.xmodule_AboutDescriptor {
+  @import "001-cdb9f90b9e5b5eeef97d3ff2e7ad1c0a.scss";
+  @import "000-cd23cf32f86efa1c4179df0201722e55.scss";
+}
+.xmodule_edit.xmodule_CapaDescriptor {
+  @import "001-163c43c549d23d3aa2350fdfa7a2c523.scss";
+  @import "000-cd23cf32f86efa1c4179df0201722e55.scss";
+}
+.xmodule_edit.xmodule_LTIDescriptor {
+  @import "000-d41921b4c5d45188759ef3d04fd9a78a.scss";
+}
+.xmodule_edit.xmodule_RawDescriptor {
+  @import "000-d41921b4c5d45188759ef3d04fd9a78a.scss";
+}
+.xmodule_edit.xmodule_VideoDescriptor {
+  @import "000-c5951f70913fdf4a38893b11d0c22cd3.scss";
+}
+.xmodule_edit.xmodule_WordCloudDescriptor {
+  @import "000-d41921b4c5d45188759ef3d04fd9a78a.scss";
+}
+.xmodule_edit.xmodule_CourseInfoDescriptor {
+  @import "001-cdb9f90b9e5b5eeef97d3ff2e7ad1c0a.scss";
+  @import "000-cd23cf32f86efa1c4179df0201722e55.scss";
+}
+.xmodule_edit.xmodule_AnnotatableDescriptor {
+  @import "000-d41921b4c5d45188759ef3d04fd9a78a.scss";
+}
+.xmodule_edit.xmodule_HtmlDescriptor {
+  @import "001-cdb9f90b9e5b5eeef97d3ff2e7ad1c0a.scss";
+  @import "000-cd23cf32f86efa1c4179df0201722e55.scss";
+}
+.xmodule_edit.xmodule_CustomTagDescriptor {
+  @import "000-d41921b4c5d45188759ef3d04fd9a78a.scss";
+}

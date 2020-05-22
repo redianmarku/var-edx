@@ -1,0 +1,11 @@
+@import 'edx-bootstrap';
+
+.form-section {
+	padding: 0 $spacer $spacer;
+  font-size: $font-size-base;
+
+  // set label and validation text to be larger in Studio
+  div, label {
+    font-size: $font-size-base;
+  }
+}

@@ -1,0 +1,151 @@
+@import 'utils/scss/focus';
+
+/* Note: Because postcss-prepend-selector is used in this project, all selectors defined in any CSS/SCSS file will have
+ * "#root.SFE " prepended to them so that all styles here will be scoped to *only* the root div. */
+
+/* reset all element properties to initial values as defined in CSS spec (*not* browser defaults) */
+* {
+  all: initial;
+  /* allow all elements to inherit these properties from the root "body" div */
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-align: inherit;
+  background-color: inherit;
+  cursor: inherit;
+}
+
+/* apply Firefox's default stylesheet so that Bootstrap has some browser-like styling to work with */
+@import 'default';
+
+/* apply the edx-bootstrap theme */
+@import 'edx-bootstrap';
+
+/* apply the Bootstrap reboot (normalize.css) to convert Firefox default styling to some cross-browser baseline
+ * then, apply the Bootstrap component styling */
+@import '~bootstrap/scss/bootstrap';
+
+/* Since elements inside the SFE div can no longer inherit styles set on the <body>, we will apply the styles that
+ * the Bootstrap reboot applies to the <body> on the wrapper div instead, which containing elements can inherit.
+ */
+.SFE-wrapper {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  background-color: rgb(245, 245, 245);
+}
+
+/* The page-header class exists in Bootstrap 3.3 but not in our alpha version currently */
+.page-header {
+  padding-bottom: $spacer * 0.5;
+  margin: ($spacer * 2) 0 $spacer;
+  border-bottom: 1px solid theme-color(light);
+}
+
+.bullet-list {
+  @extend .list;
+  list-style-type: disc;
+}
+
+button {
+  // override default of `buttonface` which varies in different browsers
+  background-color: inherit;
+  &:focus{
+    box-shadow: 2px;
+  }
+}
+
+input {
+  &:focus {
+    @include focus();
+  }
+}
+
+// remove macos searchfield styling from search inputs which interferes with our styling
+input[type="search"] {
+  appearance: none;
+}
+
+// Paragon-specific styling copied here from:
+// https://github.com/edx/paragon/blob/efd86c59fe6266b569939a2d5f526fce5f2ecafc/src/asInput/asInput.scss#L5-L7
+.fa-icon-spacing {
+  padding: 0px 5px 0px 0px;
+}
+
+.list {
+  margin-left: $spacer * 2;
+}
+
+.modal.show {
+  position: fixed;
+  background-color: transparent;
+  max-height: 100%;
+  width: 100%;
+
+  &:focus {
+    .modal-dialog {
+      box-shadow: $btn-focus-box-shadow;
+    }
+  }
+}
+
+.modal.is-ie11 {
+  // fix browser that likes to do things its own way
+  overflow-y: scroll;
+  height: auto;
+
+  .modal-dialog {
+    height: auto;
+    max-height: none;
+  }
+}
+
+.modal.modal-backdrop {
+  background-color: rgba(0,0,0,0.3);
+
+  // Fade for backdrop
+  &.fade { opacity: 0; }
+  &.show { opacity: 1; }
+}
+
+.modal-dialog {
+  height: 100%;
+  margin: auto;
+  padding: $spacer / 2;
+
+  @media(min-width: map-get($grid-breakpoints, 'sm')) {
+    padding: $spacer;
+  }
+}
+
+.modal-content {
+  max-height: 100%;
+}
+
+.modal-header {
+  flex: 0 0 auto;
+}
+
+.modal-body {
+  overflow: auto;
+}
+
+.modal-footer {
+  flex: 0 0 auto;
+}
+
+.font-small {
+  font-size: $font-size-sm;
+}
+
+.font-large {
+  font-size: $font-size-lg;
+}
+
+.font-extra-large {
+  font-size: 1.5*$font-size-base;
+}

@@ -1,0 +1,57 @@
+/* -------------------------------------------------------------------
+// markItUp!
+// By Jay Salvat - http://markitup.jaysalvat.com/
+// ------------------------------------------------------------------*/
+.wiki .markItUpButton1 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/h1.6ba8cf63911a.png"); 
+}
+.wiki .markItUpButton2 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/h2.9cc0a47410d7.png"); 
+}
+.wiki .markItUpButton3 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/h3.f9f9088f73e1.png"); 
+}
+.wiki .markItUpButton4 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/h4.db48437451e2.png"); 
+}
+.wiki .markItUpButton5 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/h5.fc600a0b27e3.png"); 
+}
+
+.wiki .markItUpButton6 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/bold.e5cde2aade38.png");
+}
+.wiki .markItUpButton7 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/italic.aff667def197.png");
+}
+.wiki .markItUpButton8 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/stroke.1e7f8f27087f.png");
+}
+
+.wiki .markItUpButton9 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/list-bullet.111e3c77d7a4.png");
+}
+.wiki .markItUpButton10 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/list-numeric.6f1b57d2d6d4.png");
+}
+
+.wiki .markItUpButton11 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/picture.c215d8635017.png"); 
+}
+.wiki .markItUpButton12 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/link.c8bef935926a.png");
+}
+.wiki .markItUpButton13 a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/url.cd5894881813.png");
+}
+
+.wiki .markItUpButton14 a	{
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/quotes.0a556dc521bc.png");
+}
+.wiki .markItUpButton15 a	{
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/code.50b392c2051b.png");
+}
+
+.wiki .preview a {
+  background-image:url("/static/js/vendor/markitup/sets/wiki/images/preview.2a5b7de72bf5.png");
+}

@@ -1,0 +1,59 @@
+@import 'edx-bootstrap';
+
+// pad the studio button so that it's not crowded by the web-copy button
+.studio-copy-button {
+  margin-right: $spacer;
+  margin-bottom: $spacer;
+}
+
+.copy-icon {
+  padding-right: $spacer * 0.25;
+}
+
+.no-image-preview {
+  @extend .p-3;
+  background-color: theme-color('light');
+  color: theme-color('dark');
+}
+
+.table {
+  // Styling from studio's ui-window mixin
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border: 1px solid #b2b2b2;
+  table-layout: fixed;
+}
+
+.table th span, .table td span {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.table th button {
+  font-weight: bold;
+}
+
+.table caption {
+  padding: 0;
+}
+
+.table tbody tr td:first-child {
+  padding-left: 2rem;
+}
+
+.table thead th {
+  button {
+    padding: 0;
+  }
+}
+
+.wrap-text {
+  word-wrap: break-word;
+}
+
+// This gives the "Copy URLs" column header enough space so that it doesn't wrap and make the whole
+// header row too wide vertically.
+.table thead th:nth-child(5) {
+  min-width: $spacer * 12;
+}

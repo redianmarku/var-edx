@@ -1,0 +1,21 @@
+@import 'edx-bootstrap';
+
+.list {
+  $bottom-spacer: $spacer * 0.5;
+  margin-left: $spacer * 2;
+  margin-bottom: $bottom-spacer;
+
+  li {
+    margin-bottom: $bottom-spacer;
+  }
+}
+
+.numerical-list {
+  @extend .list;
+  list-style-type: decimal;
+}
+
+.alphabetical-list {
+  @extend .list;
+  list-style-type: lower-alpha;
+}

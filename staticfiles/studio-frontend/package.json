@@ -1,0 +1,177 @@
+{
+  "_args": [
+    [
+      "@edx/studio-frontend@1.16.14",
+      "/home/bitrock/ruby24stack/apps/edx/htdocs"
+    ]
+  ],
+  "_from": "@edx/studio-frontend@1.16.14",
+  "_id": "@edx/studio-frontend@1.16.14",
+  "_inBundle": false,
+  "_integrity": "sha512-rpT0KuyrOdh8Jtbq3owaZ1n/LY+pQgKLHBWCP4j+ytv3fWntZOxjpBhbh+VvltM4k4iVUNxOwu6kigoINOVqrg==",
+  "_location": "/@edx/studio-frontend",
+  "_phantomChildren": {
+    "@edx/edx-bootstrap": "1.0.3",
+    "airbnb-prop-types": "2.11.0",
+    "babel-polyfill": "6.26.0",
+    "classnames": "2.2.5",
+    "email-prop-type": "1.1.5",
+    "font-awesome": "4.7.0",
+    "loose-envify": "1.3.1",
+    "mailto-link": "1.0.0",
+    "object-assign": "4.1.1",
+    "prop-types": "15.6.0",
+    "react-dom": "16.1.0",
+    "react-element-proptypes": "1.0.0",
+    "react-proptype-conditional-require": "1.0.4",
+    "react-responsive": "5.0.0",
+    "sanitize-html": "1.20.0",
+    "scheduler": "0.12.0"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@edx/studio-frontend@1.16.14",
+    "name": "@edx/studio-frontend",
+    "escapedName": "@edx%2fstudio-frontend",
+    "scope": "@edx",
+    "rawSpec": "1.16.14",
+    "saveSpec": null,
+    "fetchSpec": "1.16.14"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@edx/studio-frontend/-/studio-frontend-1.16.14.tgz",
+  "_spec": "1.16.14",
+  "_where": "/home/bitrock/ruby24stack/apps/edx/htdocs",
+  "bugs": {
+    "url": "https://github.com/edx/studio-frontend/issues"
+  },
+  "dependencies": {
+    "@edx/edx-bootstrap": "^1.0.0",
+    "@edx/paragon": "3.4.8",
+    "airbnb-prop-types": "^2.10.0",
+    "babel-polyfill": "^6.26.0",
+    "classnames": "^2.2.5",
+    "copy-to-clipboard": "^3.0.8",
+    "custom-event-polyfill": "^0.3.0",
+    "font-awesome": "^4.7.0",
+    "js-cookie": "^2.1.4",
+    "popper.js": "^1.12.5",
+    "prop-types": "^15.5.10",
+    "react": "^16.2.0",
+    "react-dom": "^16.1.0",
+    "react-dropzone": "^4.2.3",
+    "react-intl": "^2.4.0",
+    "react-intl-translations-manager": "^5.0.1",
+    "react-redux": "^5.0.6",
+    "react-transition-group": "^2.2.1",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "description": "The frontend for the Open edX platform",
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-angular": "^6.1.3",
+    "@commitlint/travis-cli": "^6.1.3",
+    "autoprefixer": "^7.2.5",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-react-intl": "^2.3.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "codecov": "^2.3.0",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint-config-edx": "4.0.0",
+    "extract-text-webpack-plugin": "next",
+    "fetch-mock": "^5.13.1",
+    "file-loader": "^1.1.11",
+    "html-webpack-harddisk-plugin": "^0.2.0",
+    "html-webpack-plugin": "^3.1.0",
+    "husky": "^0.14.3",
+    "identity-obj-proxy": "^3.0.0",
+    "ignore-loader": "^0.1.2",
+    "jest": "^22.4.3",
+    "node-sass": "^4.8.1",
+    "null-loader": "^0.1.1",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "postcss-initial": "^2.0.0",
+    "postcss-loader": "^2.1.2",
+    "postcss-prepend-selector": "^0.3.1",
+    "postcss-pseudo-class-any-link": "^4.0.0",
+    "postcss-strip-font-face": "^1.0.0",
+    "raw-loader": "^0.5.1",
+    "react-dev-utils": "^4.0.0",
+    "react-test-renderer": "^16.1.0",
+    "reactifex": "1.1.1",
+    "redux-mock-store": "^1.3.0",
+    "sass-loader": "^6.0.7",
+    "semantic-release": "^15.1.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2"
+  },
+  "homepage": "https://github.com/edx/studio-frontend#readme",
+  "jest": {
+    "setupFiles": [
+      "./shim.js",
+      "./setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/src/accessibilityIndex.jsx",
+      "<rootDir>/src/courseHealthCheckIndex.jsx",
+      "<rootDir>/src/courseOutlineHealthCheckIndex.jsx",
+      "<rootDir>/src/index.jsx",
+      "<rootDir>/src/editImageModalIndex.jsx",
+      "<rootDir>/src/components/BackendStatusBanner/",
+      "<rootDir>/src/.*/container.jsx",
+      "<rootDir>/src/data/i18n/locales/",
+      "<rootDir>/src/utils/matches-prefixer.js",
+      "<rootDir>/src/utils/mockPortals.js",
+      "<rootDir>/src/utils/mockQuerySelector.js"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(@edx/paragon)/).*/"
+    ],
+    "testPathIgnorePatterns": [],
+    "globals": {
+      "studioContext": {}
+    }
+  },
+  "license": "AGPL-3.0",
+  "name": "@edx/studio-frontend",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edx/studio-frontend.git"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production BABEL_ENV=production $(npm bin)/webpack --config=config/webpack.prod.config.js",
+    "i18n_extract": "BABEL_ENV=i18n $(npm bin)/babel src --quiet > /dev/null",
+    "lint": "eslint --ext .js --ext .jsx .",
+    "lint_fix": "eslint --fix --ext .js --ext .jsx .",
+    "prepare": "npm run build",
+    "start": "NODE_ENV=development BABEL_ENV=development $(npm bin)/webpack-dev-server --config=config/webpack.dev.config.js --hot --inline --progress",
+    "test": "jest --runInBand --coverage"
+  },
+  "version": "1.16.14"
+}

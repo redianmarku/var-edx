@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <script type="text/javascript" src="vendor/jsme/jsme/jsme.nocache.js"></script>
+  <script src="js/capa/src/jschannel.js"></script>
+</head>
+<body>
+
+<div id="jsme-editor"></div>
+
+<script type="text/javascript">
+    var editor = null;
+    var correct_answer = null;
+    var state = null;
+
+    function getState() {
+      if (editor) return JSON.stringify(
+          { state: editor.molFile(), answer: correct_answer });
+    }
+
+    function setState(data) {
+      data = JSON.parse(data);
+      correct_answer = data.answer;
+      state = data.state;
+      if (editor) editor.readMolFile(state);
+    }
+
+    function getGrade() {
+      var answer = editor.smiles();
+      return answer == correct_answer ? 'correct': 'incorrect';
+    }
+
+    function jsmeOnLoad() {
+      editor = new JSApplet.JSME("jsme-editor", "660px", "300px");
+      if (state) editor.readMolFile(state);
+    }
+
+    /* Establish a channel only if this application is embedded in an iframe.
+       This will let the parent window communicate with this application using
+       RPC and bypass SOP restrictions.*/
+    if (window.parent !== window) {
+      channel = Channel.build({
+          window: window.parent,
+          origin: "*",
+          scope: "JSInput"
+      });
+
+      channel.bind("getGrade", function(trans, params) {
+          return getGrade(params)
+      });
+      channel.bind("getState", function(trans, params) {
+          return getState(params);
+      });
+      channel.bind("setState", function(trans, params) {
+          return setState(params)
+      });
+    }
+</script>
+
+</body>
+</html>

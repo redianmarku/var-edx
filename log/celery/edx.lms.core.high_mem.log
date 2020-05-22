@@ -1,0 +1,910 @@
+WARNING:py.warnings:/opt/bitnami/apps/edx/edx-platform/lms/djangoapps/courseware/__init__.py:5: DeprecationWarning: Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported
+  warnings.warn("Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported", DeprecationWarning)
+
+2020-05-19 16:44:46,330 WARNING 7408 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-19 16:44:46,331 WARNING 7408 [enterprise.utils] utils.py:51 - cannot import name _LTI_BACKENDS
+2020-05-19 16:44:55,072 WARNING 7408 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+ 
+ -------------- celery@edx.lms.core.high_mem.OPenEDX v3.1.25 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1077-azure-x86_64-with-debian-stretch-sid
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f2b8398c290
+- ** ---------- .> transport:   amqp://bn_edx:**@localhost:5672//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.high_mem exchange=edx.lms.core(direct) key=edx.lms.core.high_mem
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . edx_sga.tasks.zip_student_submissions
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_course_enrollment
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . gating.tasks.task_evaluate_subsection_completion_milestones
+  . integrated_channels.integrated_channel.tasks.transmit_content_metadata
+  . integrated_channels.integrated_channel.tasks.transmit_learner_data
+  . integrated_channels.integrated_channel.tasks.unlink_inactive_learners
+  . lms.djangoapps.certificates.tasks.generate_certificate
+  . lms.djangoapps.discussion.tasks.send_ace_message
+  . lms.djangoapps.discussion.tasks.update_discussions_map
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_course_enrollment
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_course_and_subsection_grades_for_user
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . lms.djangoapps.verify_student.tasks.send_verification_status_email
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credentials.tasks.v1.tasks.send_grade_to_credentials
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_course_certificate
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks.ScheduleCourseUpdate
+  . openedx.core.djangoapps.schedules.tasks.ScheduleMessageBaseTask
+  . openedx.core.djangoapps.schedules.tasks.ScheduleRecurringNudge
+  . openedx.core.djangoapps.schedules.tasks.ScheduleUpgradeReminder
+  . openedx.core.djangoapps.schedules.tasks._course_update_schedule_send
+  . openedx.core.djangoapps.schedules.tasks._re2020-05-19 16:44:55,813 INFO 7408 [celery.worker.consumer] consumer.py:526 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
+2020-05-19 16:44:55,864 INFO 7408 [celery.worker.consumer] consumer.py:614 - mingle: searching for neighbors
+2020-05-19 16:44:56,952 INFO 7408 [celery.worker.consumer] consumer.py:632 - mingle: all alone
+2020-05-19 16:44:56,975 WARNING 7408 [celery.redirected] log.py:282 - celery@edx.lms.core.high_mem.OPenEDX ready.
+Killed
+WARNING:py.warnings:/opt/bitnami/apps/edx/edx-platform/lms/djangoapps/courseware/__init__.py:5: DeprecationWarning: Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported
+  warnings.warn("Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported", DeprecationWarning)
+
+2020-05-20 03:50:42,623 WARNING 107025 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 03:50:42,624 WARNING 107025 [enterprise.utils] utils.py:51 - cannot import name _LTI_BACKENDS
+2020-05-20 03:50:52,565 WARNING 107025 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+ 
+ -------------- celery@edx.lms.core.high_mem.OPenEDX v3.1.25 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1077-azure-x86_64-with-debian-stretch-sid
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f76e4985290
+- ** ---------- .> transport:   amqp://bn_edx:**@localhost:5672//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.high_mem exchange=edx.lms.core(direct) key=edx.lms.core.high_mem
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . edx_sga.tasks.zip_student_submissions
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_course_enrollment
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . gating.tasks.task_evaluate_subsection_completion_milestones
+  . integrated_channels.integrated_channel.tasks.transmit_content_metadata
+  . integrated_channels.integrated_channel.tasks.transmit_learner_data
+  . integrated_channels.integrated_channel.tasks.unlink_inactive_learners
+  . lms.djangoapps.certificates.tasks.generate_certificate
+  . lms.djangoapps.discussion.tasks.send_ace_message
+  . lms.djangoapps.discussion.tasks.update_discussions_map
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_course_enrollment
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_course_and_subsection_grades_for_user
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . lms.djangoapps.verify_student.tasks.send_verification_status_email
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credentials.tasks.v1.tasks.send_grade_to_credentials
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_course_certificate
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks.ScheduleCourseUpdate
+  . openedx.core.djangoapps.schedules.tasks.ScheduleMessageBaseTask
+  . openedx.core.djangoapps.schedules.tasks.ScheduleRecurringNudge
+  . openedx.core.djangoapps.schedules.tasks.ScheduleUpgradeReminder
+  . openedx.core.djangoapps.schedules.tasks._course_update_schedule_send
+  . openedx.core.djangoapps.schedules.tasks._re2020-05-20 03:50:53,417 INFO 107025 [celery.worker.consumer] consumer.py:526 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
+2020-05-20 03:50:53,452 INFO 107025 [celery.worker.consumer] consumer.py:614 - mingle: searching for neighbors
+2020-05-20 03:50:54,492 INFO 107025 [celery.worker.consumer] consumer.py:632 - mingle: all alone
+2020-05-20 03:50:54,531 WARNING 107025 [celery.redirected] log.py:282 - celery@edx.lms.core.high_mem.OPenEDX ready.
+2020-05-20 03:50:54,856 INFO 107025 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.OPenEDX
+2020-05-20 03:50:54,890 INFO 107025 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.OPenEDX
+Killed
+WARNING:py.warnings:/opt/bitnami/apps/edx/edx-platform/lms/djangoapps/courseware/__init__.py:5: DeprecationWarning: Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported
+  warnings.warn("Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported", DeprecationWarning)
+
+2020-05-20 04:14:31,354 WARNING 111097 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 04:14:31,362 WARNING 111097 [enterprise.utils] utils.py:51 - cannot import name _LTI_BACKENDS
+2020-05-20 04:14:40,892 WARNING 111097 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+ 
+ -------------- celery@edx.lms.core.high_mem.OPenEDX v3.1.25 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1077-azure-x86_64-with-debian-stretch-sid
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7efe112a9290
+- ** ---------- .> transport:   amqp://bn_edx:**@localhost:5672//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.high_mem exchange=edx.lms.core(direct) key=edx.lms.core.high_mem
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . edx_sga.tasks.zip_student_submissions
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_course_enrollment
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . gating.tasks.task_evaluate_subsection_completion_milestones
+  . integrated_channels.integrated_channel.tasks.transmit_content_metadata
+  . integrated_channels.integrated_channel.tasks.transmit_learner_data
+  . integrated_channels.integrated_channel.tasks.unlink_inactive_learners
+  . lms.djangoapps.certificates.tasks.generate_certificate
+  . lms.djangoapps.discussion.tasks.send_ace_message
+  . lms.djangoapps.discussion.tasks.update_discussions_map
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_course_enrollment
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_course_and_subsection_grades_for_user
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . lms.djangoapps.verify_student.tasks.send_verification_status_email
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credentials.tasks.v1.tasks.send_grade_to_credentials
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_course_certificate
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks.ScheduleCourseUpdate
+  . openedx.core.djangoapps.schedules.tasks.ScheduleMessageBaseTask
+  . openedx.core.djangoapps.schedules.tasks.ScheduleRecurringNudge
+  . openedx.core.djangoapps.schedules.tasks.ScheduleUpgradeReminder
+  . openedx.core.djangoapps.schedules.tasks._course_update_schedule_send
+  . openedx.core.djangoapps.schedules.tasks._re2020-05-20 04:14:41,856 INFO 111097 [celery.worker.consumer] consumer.py:526 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
+2020-05-20 04:14:41,894 INFO 111097 [celery.worker.consumer] consumer.py:614 - mingle: searching for neighbors
+2020-05-20 04:14:42,957 INFO 111097 [celery.worker.consumer] consumer.py:632 - mingle: all alone
+2020-05-20 04:14:43,011 WARNING 111097 [celery.redirected] log.py:282 - celery@edx.lms.core.high_mem.OPenEDX ready.
+2020-05-20 04:14:43,870 INFO 111097 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.OPenEDX
+2020-05-20 04:14:44,092 INFO 111097 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.OPenEDX
+Killed
+WARNING:py.warnings:/opt/bitnami/apps/edx/edx-platform/lms/djangoapps/courseware/__init__.py:5: DeprecationWarning: Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported
+  warnings.warn("Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported", DeprecationWarning)
+
+2020-05-20 04:18:50,544 WARNING 112360 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 04:18:50,545 WARNING 112360 [enterprise.utils] utils.py:51 - cannot import name _LTI_BACKENDS
+2020-05-20 04:18:58,559 WARNING 112360 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+ 
+ -------------- celery@edx.lms.core.high_mem.OPenEDX v3.1.25 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1077-azure-x86_64-with-debian-stretch-sid
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f4060621290
+- ** ---------- .> transport:   amqp://bn_edx:**@localhost:5672//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.high_mem exchange=edx.lms.core(direct) key=edx.lms.core.high_mem
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . edx_sga.tasks.zip_student_submissions
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_course_enrollment
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . gating.tasks.task_evaluate_subsection_completion_milestones
+  . integrated_channels.integrated_channel.tasks.transmit_content_metadata
+  . integrated_channels.integrated_channel.tasks.transmit_learner_data
+  . integrated_channels.integrated_channel.tasks.unlink_inactive_learners
+  . lms.djangoapps.certificates.tasks.generate_certificate
+  . lms.djangoapps.discussion.tasks.send_ace_message
+  . lms.djangoapps.discussion.tasks.update_discussions_map
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_course_enrollment
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_course_and_subsection_grades_for_user
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . lms.djangoapps.verify_student.tasks.send_verification_status_email
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credentials.tasks.v1.tasks.send_grade_to_credentials
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_course_certificate
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks.ScheduleCourseUpdate
+  . openedx.core.djangoapps.schedules.tasks.ScheduleMessageBaseTask
+  . openedx.core.djangoapps.schedules.tasks.ScheduleRecurringNudge
+  . openedx.core.djangoapps.schedules.tasks.ScheduleUpgradeReminder
+  . openedx.core.djangoapps.schedules.tasks._course_update_schedule_send
+  . openedx.core.djangoapps.schedules.tasks._re2020-05-20 04:18:59,324 INFO 112360 [celery.worker.consumer] consumer.py:526 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
+2020-05-20 04:18:59,371 INFO 112360 [celery.worker.consumer] consumer.py:614 - mingle: searching for neighbors
+2020-05-20 04:19:00,400 INFO 112360 [celery.worker.consumer] consumer.py:632 - mingle: all alone
+2020-05-20 04:19:00,449 WARNING 112360 [celery.redirected] log.py:282 - celery@edx.lms.core.high_mem.OPenEDX ready.
+2020-05-20 04:19:00,473 INFO 112360 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.OPenEDX
+Killed
+WARNING:py.warnings:/opt/bitnami/apps/edx/edx-platform/lms/djangoapps/courseware/__init__.py:5: DeprecationWarning: Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported
+  warnings.warn("Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported", DeprecationWarning)
+
+2020-05-20 05:54:24,944 WARNING 125930 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 05:54:24,945 WARNING 125930 [enterprise.utils] utils.py:51 - cannot import name _LTI_BACKENDS
+2020-05-20 05:54:34,824 WARNING 125930 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+ 
+ -------------- celery@edx.lms.core.high_mem.OPenEDX v3.1.25 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1077-azure-x86_64-with-debian-stretch-sid
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fa577910290
+- ** ---------- .> transport:   amqp://bn_edx:**@localhost:5672//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.high_mem exchange=edx.lms.core(direct) key=edx.lms.core.high_mem
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . edx_sga.tasks.zip_student_submissions
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_course_enrollment
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . gating.tasks.task_evaluate_subsection_completion_milestones
+  . integrated_channels.integrated_channel.tasks.transmit_content_metadata
+  . integrated_channels.integrated_channel.tasks.transmit_learner_data
+  . integrated_channels.integrated_channel.tasks.unlink_inactive_learners
+  . lms.djangoapps.certificates.tasks.generate_certificate
+  . lms.djangoapps.discussion.tasks.send_ace_message
+  . lms.djangoapps.discussion.tasks.update_discussions_map
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_course_enrollment
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_course_and_subsection_grades_for_user
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . lms.djangoapps.verify_student.tasks.send_verification_status_email
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credentials.tasks.v1.tasks.send_grade_to_credentials
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_course_certificate
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks.ScheduleCourseUpdate
+  . openedx.core.djangoapps.schedules.tasks.ScheduleMessageBaseTask
+  . openedx.core.djangoapps.schedules.tasks.ScheduleRecurringNudge
+  . openedx.core.djangoapps.schedules.tasks.ScheduleUpgradeReminder
+  . openedx.core.djangoapps.schedules.tasks._course_update_schedule_send
+  . openedx.core.djangoapps.schedules.tasks._re2020-05-20 05:54:35,708 INFO 125930 [celery.worker.consumer] consumer.py:526 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
+2020-05-20 05:54:35,758 INFO 125930 [celery.worker.consumer] consumer.py:614 - mingle: searching for neighbors
+2020-05-20 05:54:36,809 INFO 125930 [celery.worker.consumer] consumer.py:632 - mingle: all alone
+2020-05-20 05:54:36,844 WARNING 125930 [celery.redirected] log.py:282 - celery@edx.lms.core.high_mem.OPenEDX ready.
+2020-05-20 05:54:37,257 INFO 125930 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.OPenEDX
+2020-05-20 05:54:37,355 INFO 125930 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.OPenEDX
+Killed
+WARNING:py.warnings:/opt/bitnami/apps/edx/edx-platform/lms/djangoapps/courseware/__init__.py:5: DeprecationWarning: Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported
+  warnings.warn("Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported", DeprecationWarning)
+
+2020-05-20 08:14:57,933 WARNING 15040 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-20 08:14:57,933 WARNING 15040 [enterprise.utils] utils.py:51 - cannot import name _LTI_BACKENDS
+2020-05-20 08:15:06,765 WARNING 15040 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+ 
+ -------------- celery@edx.lms.core.high_mem.OPenEDX v3.1.25 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1077-azure-x86_64-with-debian-stretch-sid
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f2c0432d250
+- ** ---------- .> transport:   amqp://bn_edx:**@localhost:5672//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.high_mem exchange=edx.lms.core(direct) key=edx.lms.core.high_mem
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . edx_sga.tasks.zip_student_submissions
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_course_enrollment
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . gating.tasks.task_evaluate_subsection_completion_milestones
+  . integrated_channels.integrated_channel.tasks.transmit_content_metadata
+  . integrated_channels.integrated_channel.tasks.transmit_learner_data
+  . integrated_channels.integrated_channel.tasks.unlink_inactive_learners
+  . lms.djangoapps.certificates.tasks.generate_certificate
+  . lms.djangoapps.discussion.tasks.send_ace_message
+  . lms.djangoapps.discussion.tasks.update_discussions_map
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_course_enrollment
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_course_and_subsection_grades_for_user
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . lms.djangoapps.verify_student.tasks.send_verification_status_email
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credentials.tasks.v1.tasks.send_grade_to_credentials
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_course_certificate
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks.ScheduleCourseUpdate
+  . openedx.core.djangoapps.schedules.tasks.ScheduleMessageBaseTask
+  . openedx.core.djangoapps.schedules.tasks.ScheduleRecurringNudge
+  . openedx.core.djangoapps.schedules.tasks.ScheduleUpgradeReminder
+  . openedx.core.djangoapps.schedules.tasks._course_update_schedule_send
+  . openedx.core.djangoapps.schedules.tasks._re2020-05-20 08:15:07,668 INFO 15040 [celery.worker.consumer] consumer.py:526 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
+2020-05-20 08:15:07,707 INFO 15040 [celery.worker.consumer] consumer.py:614 - mingle: searching for neighbors
+2020-05-20 08:15:08,761 INFO 15040 [celery.worker.consumer] consumer.py:632 - mingle: all alone
+2020-05-20 08:15:08,788 WARNING 15040 [celery.redirected] log.py:282 - celery@edx.lms.core.high_mem.OPenEDX ready.
+Killed
+WARNING:py.warnings:/opt/bitnami/apps/edx/edx-platform/lms/djangoapps/courseware/__init__.py:5: DeprecationWarning: Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported
+  warnings.warn("Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported", DeprecationWarning)
+
+2020-05-21 04:39:43,534 WARNING 28237 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 04:39:43,534 WARNING 28237 [enterprise.utils] utils.py:51 - cannot import name _LTI_BACKENDS
+2020-05-21 04:39:53,692 WARNING 28237 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+ 
+ -------------- celery@edx.lms.core.high_mem.OPenEDX v3.1.25 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1077-azure-x86_64-with-debian-stretch-sid
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f8cdcea2290
+- ** ---------- .> transport:   amqp://bn_edx:**@localhost:5672//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.high_mem exchange=edx.lms.core(direct) key=edx.lms.core.high_mem
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . edx_sga.tasks.zip_student_submissions
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_course_enrollment
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . gating.tasks.task_evaluate_subsection_completion_milestones
+  . integrated_channels.integrated_channel.tasks.transmit_content_metadata
+  . integrated_channels.integrated_channel.tasks.transmit_learner_data
+  . integrated_channels.integrated_channel.tasks.unlink_inactive_learners
+  . lms.djangoapps.certificates.tasks.generate_certificate
+  . lms.djangoapps.discussion.tasks.send_ace_message
+  . lms.djangoapps.discussion.tasks.update_discussions_map
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_course_enrollment
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_course_and_subsection_grades_for_user
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . lms.djangoapps.verify_student.tasks.send_verification_status_email
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credentials.tasks.v1.tasks.send_grade_to_credentials
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_course_certificate
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks.ScheduleCourseUpdate
+  . openedx.core.djangoapps.schedules.tasks.ScheduleMessageBaseTask
+  . openedx.core.djangoapps.schedules.tasks.ScheduleRecurringNudge
+  . openedx.core.djangoapps.schedules.tasks.ScheduleUpgradeReminder
+  . openedx.core.djangoapps.schedules.tasks._course_update_schedule_send
+  . openedx.core.djangoapps.schedules.tasks._re2020-05-21 04:39:54,584 INFO 28237 [celery.worker.consumer] consumer.py:526 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
+2020-05-21 04:39:54,630 INFO 28237 [celery.worker.consumer] consumer.py:614 - mingle: searching for neighbors
+2020-05-21 04:39:55,683 INFO 28237 [celery.worker.consumer] consumer.py:632 - mingle: all alone
+2020-05-21 04:39:55,724 WARNING 28237 [celery.redirected] log.py:282 - celery@edx.lms.core.high_mem.OPenEDX ready.
+2020-05-21 04:39:56,320 INFO 28237 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.OPenEDX
+2020-05-21 04:39:56,482 INFO 28237 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.OPenEDX
+Killed
+WARNING:py.warnings:/opt/bitnami/apps/edx/edx-platform/lms/djangoapps/courseware/__init__.py:5: DeprecationWarning: Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported
+  warnings.warn("Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported", DeprecationWarning)
+
+2020-05-21 04:44:09,323 WARNING 29812 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 04:44:09,324 WARNING 29812 [enterprise.utils] utils.py:51 - cannot import name _LTI_BACKENDS
+2020-05-21 04:44:18,023 WARNING 29812 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+ 
+ -------------- celery@edx.lms.core.high_mem.OPenEDX v3.1.25 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1077-azure-x86_64-with-debian-stretch-sid
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f8fd8bd5290
+- ** ---------- .> transport:   amqp://bn_edx:**@localhost:5672//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.high_mem exchange=edx.lms.core(direct) key=edx.lms.core.high_mem
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . edx_sga.tasks.zip_student_submissions
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_course_enrollment
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . gating.tasks.task_evaluate_subsection_completion_milestones
+  . integrated_channels.integrated_channel.tasks.transmit_content_metadata
+  . integrated_channels.integrated_channel.tasks.transmit_learner_data
+  . integrated_channels.integrated_channel.tasks.unlink_inactive_learners
+  . lms.djangoapps.certificates.tasks.generate_certificate
+  . lms.djangoapps.discussion.tasks.send_ace_message
+  . lms.djangoapps.discussion.tasks.update_discussions_map
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_course_enrollment
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_course_and_subsection_grades_for_user
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . lms.djangoapps.verify_student.tasks.send_verification_status_email
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credentials.tasks.v1.tasks.send_grade_to_credentials
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_course_certificate
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks.ScheduleCourseUpdate
+  . openedx.core.djangoapps.schedules.tasks.ScheduleMessageBaseTask
+  . openedx.core.djangoapps.schedules.tasks.ScheduleRecurringNudge
+  . openedx.core.djangoapps.schedules.tasks.ScheduleUpgradeReminder
+  . openedx.core.djangoapps.schedules.tasks._course_update_schedule_send
+  . openedx.core.djangoapps.schedules.tasks._re2020-05-21 04:44:18,804 INFO 29812 [celery.worker.consumer] consumer.py:526 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
+2020-05-21 04:44:18,838 INFO 29812 [celery.worker.consumer] consumer.py:614 - mingle: searching for neighbors
+2020-05-21 04:44:19,887 INFO 29812 [celery.worker.consumer] consumer.py:632 - mingle: all alone
+2020-05-21 04:44:19,911 WARNING 29812 [celery.redirected] log.py:282 - celery@edx.lms.core.high_mem.OPenEDX ready.
+Killed
+WARNING:py.warnings:/opt/bitnami/apps/edx/edx-platform/lms/djangoapps/courseware/__init__.py:5: DeprecationWarning: Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported
+  warnings.warn("Importing 'lms.djangoapps.courseware' as 'courseware' is no longer supported", DeprecationWarning)
+
+2020-05-21 05:21:01,901 WARNING 36149 [enterprise.utils] utils.py:50 - Could not import Registry from third_party_auth.provider
+2020-05-21 05:21:01,901 WARNING 36149 [enterprise.utils] utils.py:51 - cannot import name _LTI_BACKENDS
+2020-05-21 05:21:11,976 WARNING 36149 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/venvs/edxapp/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+ 
+ -------------- celery@edx.lms.core.high_mem.OPenEDX v3.1.25 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1077-azure-x86_64-with-debian-stretch-sid
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f9b393bf290
+- ** ---------- .> transport:   amqp://bn_edx:**@localhost:5672//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.high_mem exchange=edx.lms.core(direct) key=edx.lms.core.high_mem
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . edx_sga.tasks.zip_student_submissions
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_course_enrollment
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . gating.tasks.task_evaluate_subsection_completion_milestones
+  . integrated_channels.integrated_channel.tasks.transmit_content_metadata
+  . integrated_channels.integrated_channel.tasks.transmit_learner_data
+  . integrated_channels.integrated_channel.tasks.unlink_inactive_learners
+  . lms.djangoapps.certificates.tasks.generate_certificate
+  . lms.djangoapps.discussion.tasks.send_ace_message
+  . lms.djangoapps.discussion.tasks.update_discussions_map
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_course_enrollment
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_course_and_subsection_grades_for_user
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . lms.djangoapps.verify_student.tasks.send_verification_status_email
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credentials.tasks.v1.tasks.send_grade_to_credentials
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_course_certificate
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks.ScheduleCourseUpdate
+  . openedx.core.djangoapps.schedules.tasks.ScheduleMessageBaseTask
+  . openedx.core.djangoapps.schedules.tasks.ScheduleRecurringNudge
+  . openedx.core.djangoapps.schedules.tasks.ScheduleUpgradeReminder
+  . openedx.core.djangoapps.schedules.tasks._course_update_schedule_send
+  . openedx.core.djangoapps.schedules.tasks._re2020-05-21 05:21:12,885 INFO 36149 [celery.worker.consumer] consumer.py:526 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
+2020-05-21 05:21:12,922 INFO 36149 [celery.worker.consumer] consumer.py:614 - mingle: searching for neighbors
+2020-05-21 05:21:13,960 INFO 36149 [celery.worker.consumer] consumer.py:632 - mingle: all alone
+2020-05-21 05:21:14,006 WARNING 36149 [celery.redirected] log.py:282 - celery@edx.lms.core.high_mem.OPenEDX ready.
+2020-05-21 05:21:14,305 INFO 36149 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.OPenEDX
+2020-05-21 05:21:14,592 INFO 36149 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.OPenEDX

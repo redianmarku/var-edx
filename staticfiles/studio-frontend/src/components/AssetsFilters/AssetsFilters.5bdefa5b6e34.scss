@@ -1,0 +1,9 @@
+@import 'edx-bootstrap';
+
+.filter-heading {
+  @extend .pt-3;
+}
+
+.form-check label, .form-check input {
+  cursor: pointer;
+}

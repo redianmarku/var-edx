@@ -1,0 +1,68 @@
+{% load i18n %}
+
+<!-- TODO: Replace by default edit view once available in Studio -->
+<div class="wrapper-comp-settings is-active editor-with-buttons google-edit-wrapper" id="calendar-settings-tab">
+  <div class="user-inputs-and-validation">
+    <div class="validation_alert covered">
+      <i class="alert_icon"></i>
+      <div class="alert_header">
+        <h2 class="alert_title">{% trans "Invalid Google Calendar" %}</h2>
+        <p class="alert_message">{% trans "Please correct the outlined fields." %}</p>
+      </div>
+    </div>
+    <div class="xblock-inputs editor_content_wrapper">
+      <ul class="list-input settings-list">
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+              <label class="label setting-label" for="edit_display_name">{% trans "Display Name" %}</label>
+              <input class="input setting-input edit-display-name" id="edit_display_name" value="{{ self.display_name }}" type="text" data-default-value="{{defaultName}}">
+              <button class="action setting-clear clear-display-name" type="button" name="setting-clear">
+                <i class="icon fa fa-undo"></i>
+                <span class="sr">"<%= gettext("Clear Value") %>"</span>
+              </button>
+            </div>
+            <span class="tip setting-help">{% trans "This name appears in the horizontal navigation at the top of the page." %}</span>
+        </li>
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+              <label class="label setting-label" for="edit_calendar_id">{% trans "Public Calendar ID" %}</label>
+              <input class="input setting-input edit-calendar-id" id="edit_calendar_id" value="{{ self.calendar_id }}" type="text" data-default-value="{{defaultID}}">
+              <button class="action setting-clear clear-calendar-id" type="button" name="setting-clear">
+                <i class="icon fa fa-undo"></i>
+                <span class="sr">"<%= gettext("Clear Value") %>"</span>
+              </button>
+            </div>
+            <span class="tip setting-help">{% trans "Google provides an ID for publicly available calendars. In the Google Calendar, open Settings and copy the ID from the Calendar Address section into this field. You can " %}
+              <a href="https://support.google.com/calendar/answer/34578?ctx=tltp" target="_blank">learn more here</a>.
+            </span>
+        </li>
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+              <label class="label setting-label" for="edit_default_view">{% trans "Default View" %}</label>
+              <select class="input setting-input edit-label_type" id="edit_label_type" value="{{self.default_view}}">
+                {% for view in self.views %}
+                    <option value="{{view.0}}" {% if view.0 == self.default_view %}selected="selected"{% endif %}>
+                        {{view.1}}
+                    </option>
+                {% endfor %}
+              </select>
+            </div>
+            <span class="tip setting-help">{% trans "The calendar view that students see by default. A student can change this view." %}</span>
+        </li>
+        <li class="field comp-setting-entry is-set"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="xblock-actions">
+    <span class="xblock-editor-error-message"></span>
+    <ul>
+      <li class="action-item">
+        <a href="#" id="calendar-submit-options" class="button action-primary save-button">{% trans "Save" %}</a>
+      </li>
+
+      <li class="action-item">
+        <a href="#" class="button cancel-button">{% trans "Cancel" %}</a>
+      </li>
+    </ul>
+  </div>
+</div>

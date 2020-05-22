@@ -1,0 +1,36 @@
+$pagination-disabled-bg: transparent;
+
+@import 'edx-bootstrap';
+@import '~@edx/paragon/src/Pagination/Pagination';
+
+.pagination {
+  justify-content: center;
+  align-items: center;
+
+  li {
+    list-style: none;
+    cursor: pointer;
+  }
+}
+
+.page-item {
+  text-align: center;
+}
+
+.page-link {
+  text-align: center;
+}
+
+.disabled {
+  color: $pagination-disabled-color;
+  pointer-events: none;
+  background-color: $pagination-disabled-bg;
+  border-color: $pagination-disabled-border-color;
+
+  .page-link {
+    @extend .disabled;
+  }
+}
+.page-item.disabled .page-link {
+  background-color: $pagination-disabled-bg;
+}
